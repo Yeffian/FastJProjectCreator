@@ -10,13 +10,14 @@ fun String.getLanguage(): ProjectLang? {
 }
 
 fun String.sanitize(illigeal: ArrayList<String>) {
+
     if (this == " ") {
         throw IllegalStateException("[ERROR] Cannot have empty string as name.")
     }
 
     for (keyword in illigeal) {
-        if (this.contains(keyword, true))  {
-           this.replace(keyword, "")
+        if (this.contains(keyword, true)) {
+            throw IllegalStateException("Illegal characters in project name.")
         }
     }
 }
