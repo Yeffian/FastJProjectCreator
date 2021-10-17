@@ -4,7 +4,7 @@ plugins {
     kotlin("jvm") version "1.5.10"
 }
 
-group = "me.aditc"
+group = "id.thedev.yeff"
 version = "1.0-SNAPSHOT"
 
 repositories {

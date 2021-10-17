@@ -2,7 +2,7 @@ package id.thedev.yeff
 
 fun main(args: Array<String>) {
     print("Name of your project >> ")
-    val name = readLine()?.sanitize(arrayListOf("/", "#", ":", "%", "<", ">", "+", "=", "{", "}", "NUL", "CON"))
+    val name: String? = readLine()?.sanitize(arrayListOf("/", "#", ":", "%", "<", ">", "+", "=", "{", "}", "NUL", "CON"))
 
     print("Language you want to use (Java/Kotlin/Gradle) >> ")
     val lang: ProjectLang? = readLine()?.getLanguage()
